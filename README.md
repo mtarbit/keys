@@ -6,30 +6,21 @@ names and simplify meta-key handling.
 
 ### Example usage
 
-The basic handler pattern is a switch statement with cases catching named 
-keys or key combinations. Returning true on a successful match to prevent
-further event propogation. Or false to allow the event to continue on to 
-any other handlers.
+Define your key mappings in a key handler function. A switch statement
+lets you use multiple cases to catch named keys or key combinations.
+Return true on a successful match to prevent further event propagation,
+or false to allow it to be caught by any other handlers.
 
     keys.addHandler(function(key){
       switch (key) {
-        case 'space':
-          // Do something
-          break;
-
-        case 'enter':
-          // Do something else
-          break;
-
-        default:
-          return false;
-          break;
+        case 'space': /* Do this */ break;
+        case 'enter': /* Do that */ break;
+        default:      return false; break;
       }
-
       return true;
     });
 
-The switch statement lets you map multiple keys or combos to a single action:
+Map multiple keys or combos to a single action:
 
     keys.addHandler(function(key){
       switch (key) {
