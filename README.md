@@ -1,7 +1,8 @@
 Keys
 ====
 
-Easy keyboard-handling for jQuery
+Easy keyboard-handling for jQuery. Map key codes to human-readable
+names and simplify meta-key handling.
 
 ### Example usage
 
@@ -66,4 +67,24 @@ The switch statement lets you map multiple keys or combos to a single action:
 
       return true;
     });
+
+### Example names
+
+Some example key and combo names are:
+
+    '0'   # Numbers 0-9
+    'a'   # Lowercase letters a-z
+    'A'   # Uppercase letters A-Z
+    'tab' # Special keys
+
+    # Crazy meta key combos (always in this order)
+    'cmd-ctrl-alt-shift-enter'
+
+    # For an uppercase letter 'shift' is discarded
+    'ctrl-W'
+
+    # Unmatched keys return a key code in square brackets.
+    # These are usually punctuation keys where the code
+    # can't be reliably mapped to a name.
+    '[52]'
 
