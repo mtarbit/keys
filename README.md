@@ -63,19 +63,19 @@ Map multiple keys or combos to a single action:
 
 Some example key and combo names are:
 
-    '0'   # Numbers 0-9
-    'a'   # Lowercase letters a-z
-    'A'   # Uppercase letters A-Z
-    'tab' # Special keys
+    '0'   // Numbers 0 to 9
+    'a'   // Lower-case letters a to z
+    'A'   // Upper-case letters A to Z
+    'tab' // Special keys
 
-    # Crazy meta key combos (always in this order)
+    // Crazy meta key combos (always in this order)
     'cmd-ctrl-alt-shift-enter'
 
-    # For an uppercase letter 'shift' is discarded
+    // For an uppercase letter 'shift' is discarded
     'ctrl-W'
 
-    # Unmatched keys return a key code in square brackets.
-    # These are usually punctuation keys where the code
-    # can't be reliably mapped to a name.
+    // Unmatched keys return a key code in square brackets.
+    // These are usually punctuation keys where the code
+    // can't be reliably mapped to a name.
     '[52]'
 
