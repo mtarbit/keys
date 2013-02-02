@@ -4,20 +4,20 @@
 var keys = {};
 
 keys.lookup = {
-      8: 'backspace'
-  ,   9: 'tab'
-  ,  13: 'enter'
-  ,  27: 'esc'
-  ,  32: 'space'
-  ,  33: 'page-up'
-  ,  34: 'page-down'
-  ,  35: 'end'
-  ,  36: 'home'
-  ,  37: 'left'
-  ,  39: 'right'
-  ,  38: 'up'
-  ,  40: 'down'
-  ,  46: 'delete'
+     8: 'backspace'
+  ,  9: 'tab'
+  , 13: 'enter'
+  , 27: 'esc'
+  , 32: 'space'
+  , 33: 'page-up'
+  , 34: 'page-down'
+  , 35: 'end'
+  , 36: 'home'
+  , 37: 'left'
+  , 39: 'right'
+  , 38: 'up'
+  , 40: 'down'
+  , 46: 'delete'
 };
 
 keys.name = function(e){
@@ -59,7 +59,7 @@ keys.name = function(e){
 
 keys.addHandler = function(handler){
   $(document).keydown(function(e){
-    var caught = handler(result);
+    var caught = handler(keys.name(e));
     if (caught) e.stopImmediatePropagation();
   });
 };
